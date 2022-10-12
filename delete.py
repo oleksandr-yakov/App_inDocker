@@ -5,7 +5,7 @@ server = Flask(__name__)
 
 @server.route("/")
 def start_server():
-    return "You are calling me from" + request.remote_addr + "\n"
+    return "You are calling me from"
 
 
 if __name__ == "__main__":
