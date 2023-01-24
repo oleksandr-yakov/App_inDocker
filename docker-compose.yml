@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+    appindocker:
+        build: .
+        #image: main_py_img:v1
+        container_name: main_cont
+        ports:
+            - '3284:3294'
+        restart: always
+networks:
+    default:
+        driver: bridge
+        name: mainNetwork

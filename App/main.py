@@ -6,7 +6,7 @@ server = Flask(__name__, template_folder="www")
 @server.route("/")
 def start_server():
     return render_template("index.html")
-    # return "You are calling me from" + request.remote_addr + "\n"
+    #return "You are calling me from" + request.remote_addr + "\n"
 
 
 if __name__ == "__main__":
